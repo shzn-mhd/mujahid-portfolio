@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shazan - Personal Portfolio Website</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/e6b8371d90.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/images/logo1.jpeg" alt="logo image" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#works">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>
+                    Hi, I'm <span>Mohamed Shazan</span> <br />
+                    From Sri Lanka
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/images/me.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                         I am a full-stack web developer proficient in both front-end and back-end development, capable of creating and maintaining entire web applications. i am expert  in various programming languages, databases, and frameworks, allowing
+                         to handle the complete development process, from designing user interfaces to managing server-side logic and databases.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Desktop Applications</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Current</span><br>PYTHON LANGUAGE</li>
+                            <li><span>2022</span><br>DATA STRUCTURE AND ALGORITHM</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020-Present</span><br>BICT(hons) in University of Vavuniya</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>designs and creates websites, utilizing programming languages like HTML, CSS, and JavaScript, ASP .net, ReactJs to craft engaging and functional user interfaces.
+                        It play a crucial role in building and maintaining the online presence of businesses and organizations.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>UI/UX design focuses on creating an intuitive and visually appealing user interface (UI) while ensuring a 
+                        seamless and satisfying user experience (UX). It involves a combination of thoughtful layout, interactive elements, 
+                        and user-centered design principles to enhance the overall usability and satisfaction of digital products and websites.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Development</h2>
+                    <p>App development involves the process of designing, building, and deploying software
+                         applications for mobile devices or other platforms. It encompasses various stages, 
+                         including conceptualization, coding, testing, and deployment, with the goal of creating functional and user-friendly applications that meet specific needs or solve particular problems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Works section -->
+    <div id="works">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="works-list">
+                <div class="work">
+                    <img src="assets/images/work-1.jpeg" alt="work-1">
+                    <div class="layer">
+                        <h3>chatbot</h3>
+                        <p>A chatbot is a computer program designed to simulate conversation with human users, providing automated responses based on pre-defined rules or artificial intelligence algorithms. It serves as a virtual assistant, offering information, assistance, and engagement in real-time conversations.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-2.jpeg" alt="work-2">
+                    <div class="layer">
+                        <h3>Customer support AI </h3>
+                        <p>Customer support AI enhances service by employing artificial intelligence to efficiently handle customer inquiries and issues. It streamlines communication, providing prompt and accurate responses, ultimately improving overall customer satisfaction and experience.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/images/work-3.jpeg" alt="work-3">
+                    <div class="layer">
+                        <h3>Car booking App</h3>
+                        <p>A car booking app simplifies transportation by allowing users to conveniently reserve and schedule rides with just a few taps on their mobile devices. It provides a user-friendly platform, enabling seamless booking, real-time tracking, and a hassle-free way to access reliable transportation services.</p>
+                        <a href="#"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Contact section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>singhapriyasha940@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone-flip"></i>9051729397</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="assets/my-cv.pdf" class="btn btn2" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+</html>
